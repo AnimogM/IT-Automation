@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for x in ~/data/jane_*; do
+  files+="$x "
+done
+
+
+for x in $files; do
+  if test -e $x; then
+    echo "$x" >> oldFiles.txt;
+  else
+    echo "File doesn't exist";
+ fi
+done

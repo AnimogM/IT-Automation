@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for files in files/*.html; do
+    name=$(basename "$files" .html);
+    mv "$files" "$name.css"
+done

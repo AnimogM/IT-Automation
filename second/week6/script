@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for x in apple bannana pawpaw; do
+    echo "we got $x"
+done
+
